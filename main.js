@@ -165,6 +165,12 @@ function showMerchantItemsView(id, items) {
   displayItems(items)
 }
 
+function showMerchantCouponsView(id, coupons) {
+  showingText.innerText = `All Coupons for Merchant #${id}`
+  show([couponsView])
+  hide([merchantsView, addNewButton, couponsView])
+}
+
 // Functions that add data to the DOM
 function displayItems(items) {
   itemsView.innerHTML = ''
@@ -241,6 +247,8 @@ function getMerchantCoupons(event) {
     console.log("Coupon data from fetch:", couponData)
     displayMerchantCoupons(couponData.data);
   })
+  const filteredMerchantCoupons = filterByMerchant(merchantId)
+  showMerchantCouponsView(merchantId, filteredMerchantCoupons)
 }
 
 function displayMerchantCoupons(coupons) {
