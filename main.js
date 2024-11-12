@@ -264,7 +264,7 @@ function displayMerchantCoupons(coupons) {
         <img src="" alt="">
         <h2>${coupon.attributes.name}</h2>
         <p> Use the code ${coupon.attributes.code} to save today!</p>
-        <p> With this coupon you can save ${coupon.attributes.discount_value} ${coupon.attributes.discount_type}.</p>
+        <p> With this coupon you will receive a ${coupon.attributes.discount_value} ${coupon.attributes.discount_type} savings.</p>
         <p class="merchant-name-in-coupon"> Only redeemable at: ${merchant}.</p>
       </article>
     `;
