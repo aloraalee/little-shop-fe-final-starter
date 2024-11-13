@@ -35,7 +35,7 @@ To get this application running on your local machine, follow these steps:
 
 
 ### Preview of App:
-(Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off. gifs preferred!)
+<img width="811" alt="Screenshot 2024-11-12 at 8 15 45 PM" src="https://github.com/user-attachments/assets/e0ba0adb-f66b-4495-a161-7ea1ca2996fe">
 
 ### Context:
 I had 6 days to work on this project, with the majority of my time focused on developing the backend functionality. The frontend work was a smaller portion of my overall contribution, but it was crucial for demonstrating the backend capabilities. Here's an overview of my work:
@@ -63,7 +63,52 @@ Frontend Enhancements (Secondary Focus):
 While the frontend work was less extensive, it was crucial in showcasing the backend functionality and improving the overall user experience. The project allowed me to gain comprehensive full-stack development experience, with a deeper dive into backend development practices using Ruby on Rails, including model associations, business logic implementation, and database management. The frontend work enhanced my skills in JavaScript and DOM manipulation, particularly in the context of integrating with a Rails API.
 
 ### Learning Goals:
-(What were the learning goals of this project? What tech did you work with?)
+The learning goals for this project were comprehensive, covering both backend and frontend development aspects. They included:
+1. Database Management:
+  - Writing migrations to create tables and establish relationships between them
+  - Implementing CRUD (Create, Read, Update, Delete) functionality for resources, particularly for the Coupon model
+2. Architecture and Code Organization:
+  - Utilizing the Model-View-Controller (MVC) pattern to organize code effectively
+  - Limiting logic in serializers and controllers to maintain clean, maintainable code
+3. ActiveRecord and Data Manipulation:
+  - Leveraging built-in ActiveRecord methods for complex operations such as joining tables, making calculations, and grouping data based on attributes
+4. Testing:
+  - Writing comprehensive model tests to ensure data logic integrity
+  - Developing request tests to cover the full functionality of the application
+5. Frontend Integration:
+  - Displaying data for users in a frontend application by manipulating DOM elements
+    
+The technologies I worked with during this project included:
 
-### Wins + Challenges:
-(What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+Backend:
+  - Ruby on Rails: Used as the primary framework for building the API
+  - ActiveRecord: For database operations and ORM (Object-Relational Mapping)
+  - PostgreSQL: As the database management system
+  - RSpec: For writing and running tests
+   
+Frontend:
+  - JavaScript: For client-side scripting and DOM manipulation
+  - HTML/CSS: For structuring and styling the frontend application
+  - Fetch API: For making HTTP requests to the Rails backend
+
+Version Control and Deployment:
+  - Git: For version control and collaboration
+  - GitHub: For repository hosting and project management
+
+This project provided an excellent opportunity to work across the full stack, deepening my understanding of how backend and frontend technologies interact. It reinforced my skills in Ruby on Rails development, particularly in areas like database design, API development, and testing. On the frontend, it enhanced my ability to work with vanilla JavaScript for DOM manipulation and API integration, providing a solid foundation for future work with more advanced frontend frameworks.
+
+### Wins
+1. Successful Implementation of Complex Business Logic:
+One of my biggest wins was successfully implementing the intricate business rules for the coupon system. Specifically, I managed to create a system where merchants could have a maximum of 5 activated coupons, and implemented an activation/deactivation feature instead of deletion. This required careful planning and execution, and I'm proud of how I was able to translate these requirements into functional code.
+2. Effective Database Design and Management:
+Another significant achievement was designing and implementing a database structure that efficiently handled the relationships between Merchants, Coupons, and Invoices. I successfully created migrations that established these relationships and ensured data integrity. This included making the Coupon-Invoice relationship optional without breaking existing functionality, which was a delicate balance to maintain.
+3. Comprehensive Test Coverage:
+I'm particularly proud of the extensive test suite I developed. Writing thorough model and request tests not only ensured the reliability of my code but also deepened my understanding of test-driven development practices in Rails.
+
+## Challenges:
+1. Keeping Controllers Slim:
+One of the main challenges I faced was keeping my controllers slim and adhering to the principle of "skinny controllers, fat models". Initially, I found myself putting too much logic in the controllers. To overcome this, I systematically reviewed my controller code and extracted complex logic into the models. This often involved creating new methods in the models and using ActiveRecord callbacks where appropriate. The process improved the overall structure of my code, making it more maintainable and easier to test.
+2. Balancing Backend and Frontend Development:
+Given the limited time and the focus on backend development, I found it challenging to allocate sufficient time for frontend implementation. To address this, I prioritized the most critical frontend features that would showcase the backend functionality. I created a basic but functional UI that demonstrated the core features, focusing on JavaScript functionality over extensive styling. This approach allowed me to meet the project requirements while still delivering a working full-stack application.
+
+These challenges pushed me to deepen my understanding of Rails, database design, and full-stack development. Overcoming them not only improved the project outcome but also significantly enhanced my problem-solving skills and technical knowledge.
