@@ -2,7 +2,6 @@
 
 This Vite Little Shop - Coupon Codes FE Final Project Boilerplate is built to consume and display the data from the BE Rails API built in the Mod 2 Final Project.  
 
-
 [GitHub BE Link](https://github.com/aloraalee/little-shop-be-final-starter.git) [LinkedIn link](https://www.linkedin.com/in/alora-riley)
 
 ### Abstract:
@@ -20,15 +19,17 @@ This application solves the problem of coupon management by providing a centrali
 To get this application running on your local machine, follow these steps:
 
 1. Backend Setup:
-- Clone the backend repository: git clone [GitHub BE Link](https://github.com/aloraalee/little-shop-be-final-starter.git)
+- Clone the backend repository: git clone https://github.com/aloraalee/little-shop-be-final-starter.git
 - Navigate to the backend directory: cd `little-shop-be-final-starter`
 - Install dependencies: bundle install
-- Set up the database: rails db:create db:migrate db:seed
+- Set up the database:
+`rails db:{drop,create,migrate,seed}`
+`rails db:schema:dump`
 - Start the Rails server: rails server
 - Ensure the server is running on localhost:3000
 
 2. Frontend Setup:
-- Clone the frontend repository: git clone [GitHub FE Link](https://github.com/aloraalee/little-shop-fe-final-starter/tree/main)
+- Clone the frontend repository: git clone https://github.com/aloraalee/little-shop-fe-final-starter/tree/main
 - Navigate to the frontend directory: cd `little-shop-fe-final-starter`
 - Install dependencies: npm install 
 - Start the frontend development server: npm run dev
