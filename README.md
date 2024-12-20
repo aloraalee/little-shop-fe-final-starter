@@ -53,6 +53,8 @@ Backend Development (Primary Focus):
 3. Adjusted existing tests to accommodate the new optional association between Invoice and Coupon
 4. Set up seed data or console commands to add coupons to existing invoices for testing purposes
 
+<img width="698" alt="Screenshot 2024-12-20 at 12 40 42 PM" src="https://github.com/user-attachments/assets/abfa529a-51f0-4a00-a07b-bb269f87bb8e" />  
+
 Frontend Enhancements (Secondary Focus):
 1. Iteration 1: Display Coupon Data
 - Implemented functionality to fetch and display coupon data for each merchant
